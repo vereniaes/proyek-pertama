@@ -7,5 +7,8 @@ export const createGuestNavItems = () => `
 export const createAuthNavItems = () => `
   <li><a href="#/">Dashboard</a></li>
   <li><a href="#/stories/add">Tambah Cerita</a></li>
+  <li><a href="#/favorites">Favorit</a></li>
+  <li><a href="#/offline-stories">Offline</a></li>
+  <li><a href="#/settings">Pengaturan</a></li>
   <li><button id="logout-button">Logout</button></li>
 `;

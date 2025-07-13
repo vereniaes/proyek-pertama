@@ -418,6 +418,152 @@ footer {
   margin-top: 2rem;
 }
 
+/* Story Actions */
+.story-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.story-actions .btn {
+  flex: 1;
+}
+
+/* Settings Page */
+.settings-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings-section {
+  background: var(--white-color);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.settings-section h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings-section p {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-info p {
+  margin-bottom: 0.5rem;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--secondary-color);
+}
+
+.empty-state i {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Not Found Page */
+.not-found-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 500px;
+}
+
+.not-found-icon {
+  font-size: 4rem;
+  color: var(--danger-color);
+  margin-bottom: 1rem;
+}
+
+.not-found-title {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.not-found-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+.not-found-description {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.not-found-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Additional Button Styles */
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563; /* gray-600 */
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  color: var(--white-color);
+}
+
+.btn-danger:hover {
+  background-color: #dc2626; /* red-600 */
+}
+
+.remove-favorite-btn,
+.delete-offline-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Success Message Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /* View Transitions */
 ::view-transition-old(root),
 ::view-transition-new(root) {
